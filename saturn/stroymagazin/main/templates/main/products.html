@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="products">
+    <div class="container">
+        <form action="{% url 'search_results' %}" method="GET">
+            <input type="text" name="query" placeholder="Введите запрос...">
+            <button type="submit">Искать</button>
+        </form>
+        {% for product in products %}
+        <article>
+            <img src="{{ product.image.url }}" alt="{{ product.name }}">
+            <h2>{{ product.name }}</h2>
+            <p>{{ product.description }}</p>
+             <p>Цена: {{ product.price }} руб./мешок</p>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

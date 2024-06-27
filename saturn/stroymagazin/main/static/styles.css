@@ -1,0 +1,199 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: rgb(155,220,224);
+    color: #fff;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 80px;
+    font-size: 22px;
+}
+
+header h1 {
+    margin: 0;
+    margin-left: 80px;
+    font-size: 38px;
+}
+form{
+    width: 0px;
+}
+form input {
+    background-color: #fff;
+    padding: 10px;
+    width: 300px;
+    height: 20px;
+    margin: 5px 0;
+    border-radius: 8px;
+}
+form button {
+    background-color: rgb(155,220,224);
+    border: rgb(155,220,224);
+    color: #001920;
+    width: 150px;
+    height: 30px;
+    margin: 5px 0;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('img/1.jpg') no-repeat center center/cover;
+    background-color:rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    text-align: center;
+    height: 150px;
+    padding: 150px 100px;
+}
+.foto{
+    background: url('img/2.png') no-repeat center center/cover;
+    background-color:rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    text-align: center;
+    height: 200px;
+    width: 350px;
+    padding: 30px 250px;
+}
+
+.tovar3 {
+    background: url('img/foto4.jpg') no-repeat center center/cover;
+    background-color:rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    text-align: center;
+    margin-top: 30px;
+    height: 150px;
+    width: 300px;
+    padding: 70px 500px;
+}
+
+.hero .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about, .products, .contact-info, .testimonials {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about h2, .products h2, .contact h2 {
+    margin-top: 0;
+    text-decoration: underline;
+}
+
+.products .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.products article {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: rgb(155,220,224);;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 100px;
+    margin-right: 10px;
+}
+
+.products-list article img{
+    width: 250px;
+    height: 300px; 
+    
+}
+.container h3{
+    text-decoration: underline;
+    font-size: 28px;
+}
+
+.products img {
+    width: 250px;
+    height: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 200px;
+}
+.contact {
+    text-align: center;
+}
+
+.contact label {
+    margin: 5px 0 5px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    width: 200px;
+}
+.contact button {
+    background-color: rgb(155,220,224);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 15px auto;
+    width: 120px;
+}
+
+.contact button:hover {
+    background-color: rgb(155,220,224);
+}
+
+footer {
+    background-color: rgb(155,220,224);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+

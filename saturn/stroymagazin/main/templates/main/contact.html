@@ -1,0 +1,26 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Контакты{% endblock %}
+
+{% block content %}
+<section class="contact">
+    <div class="container">
+        <h2>Контактная информация</h2>
+        <p>Email: oz.saturn@icloud.com</p>
+        <p>Телефон: +7 253 880 5801</p>
+        <p>Адрес: г. Орехово-Зуево, Малодубенское ш., 5</p>
+        <form>
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Комментарий:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</section>
+{% endblock %}

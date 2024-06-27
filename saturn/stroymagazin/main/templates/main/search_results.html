@@ -1,0 +1,26 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Результаты поиска{% endblock %}
+
+{% block content %}
+<section class="search-results">
+    <div class="container">
+        <h3>Результаты поиска для "{{query}}"</h3>
+
+        <div class="products-list">
+            {% if products %}
+                {% for product in products %}
+                    <article>
+                        <img src="{{ product.image.url }}" alt="{{ product.name }}">
+                        <h2>{{ product.name }}</h2>
+                        <p>{{ product.description }}</p>
+                        <p>Цена: {{ product.price }} руб.</p>
+                    </article>
+                {% endfor %}
+            {% else %}
+                <p>По вашему запросу ничего не найдено.</p>
+            {% endif %}
+        </div>
+    </div>
+</section>
+{% endblock %}

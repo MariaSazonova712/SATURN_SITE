@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} - Сатурн</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Сатурн</h1>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'index' %}">Главная</a></li>
+                    <li><a href="{% url 'products' %}">Товары</a></li>
+                    <li><a href="{% url 'contact' %}">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    {% block content %}{% endblock %}
+    <footer>
+        <div class="container">
+            <p>© ООО “АСТОР-ЛЮКС”, программирование и дизайн страниц, 2016-2024 год. <br><br>
+                ®ООО “АСТОР-ЛЮКС”, товарные знаки № 262010, 594860, 594861.<br><br>
+                Коммерческая концессия: ООО "САТУРН ЦЕНТР"</p>
+        </div>
+    </footer>
+</body>
+</html>
